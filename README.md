@@ -15,11 +15,23 @@ A React Native module that allows you to load fonts dynamically at runtime via b
 
 ### Automatic Installation
 
-`react-native link`
+If you've created your project either with `react-native init` or `create-react-native-app` you can link DynamicFonts automatically:
 
-### Manual Installation
+```bash
+react native link
+```
+
+### Alternative Installation
 
 #### iOS
+
+##### Cocoapods
+
+```podspec
+pod 'DynamicFonts', :path => 'node_modules/react-native-dynamic-fonts'
+```
+
+##### Manually
 
 1. In the XCode's "Project navigator", right click on your project's Libraries folder ➜ `Add Files to <...>`
 2. Go to `node_modules` ➜ `react-native-dynamic-fonts` ➜ `ios` ➜ select `RCTDynamicFonts.xcodeproj`
